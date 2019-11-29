@@ -54,7 +54,7 @@ export const deleteZombie = (id) => {
 	};
 };
 
-export const getZombieByLocation = (zombies, location) => {
+export const getZombiesByLocation = (zombies, location) => {
 	switch(location) {
 		case 'hospital':
 			return zombies.filter(z => z.location === 'hospital');

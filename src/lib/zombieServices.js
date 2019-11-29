@@ -1,9 +1,9 @@
-const baseUrl = 'http://localhost:3000'
+const baseUrl = 'http://localhost:3000';
 
 export const getZombies = () => {
 	return fetch(baseUrl)
-		.then(res => res.json())
-}
+		.then(res => res.json());
+};
 
 export const createZombie = (name, location) => {
 	return fetch(baseUrl, {
@@ -14,8 +14,8 @@ export const createZombie = (name, location) => {
 		},
 		body: JSON.stringify({ name: name, location: location })
 	})
-		.then(res => res.json())
-}
+		.then(res => res.json());
+};
 
 export const updateZombie = (zombie) => {
 	return fetch(`${baseUrl}/${zombie.id}`, {
@@ -26,8 +26,8 @@ export const updateZombie = (zombie) => {
 		},
 		body: JSON.stringify(zombie)
 	})
-		.then(res => res.json())
-}
+		.then(res => res.json());
+};
 
 export const destroyZombie = (id) => {
 	return fetch(`${baseUrl}/${id}`, {
@@ -36,5 +36,5 @@ export const destroyZombie = (id) => {
 			'Accept': 'application/json',
 			'Content-Type': 'application/json'
 		}
-	})
-}
+	});
+};
