@@ -36,6 +36,7 @@ class ZombieForm extends Component {
 				      return (<option value={n} selected={selected === n}>{n}</option>);
 				  })}
 				</select>
+				<button onclick={this.handleSubmit}>Quarantine</button>
 	  	</form>
 		);
 	};
