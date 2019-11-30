@@ -4,6 +4,9 @@ import { fetchZombies, updateCurrent, deleteZombie, getZombiesByLocation } from 
 
 const ZombieItem = ({id, name, location, updateCurrent, deleteZombie}) => (
 	<li key={id}>
+		<span className='delete-item'>
+			<button onClick={() => deleteZombie(id)}>X</button>
+		</span>
     {name}
   </li>
 )
@@ -19,6 +22,7 @@ class ZombieList extends Component {
     			{this.props.zombies.map(zombie => 
     				<ZombieItem key={zombie.id}  
     				name={zombie.name}
+    				deleteZombie={this.props.deleteZombie}
     				{...zombie} />)}
   			</ul>
   		</div>
