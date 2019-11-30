@@ -14,10 +14,12 @@ const ZombieItem = ({id, name, location, updateCurrent, deleteZombie}) => (
 class ZombieList extends Component {
 	componentDidMount() {
 		this.props.fetchZombies();
+		console.log('!!!!!', this.props, this.state);
 	}
 	render() {
 		return (
 			<div>
+				<p>Total: {this.props.zombies.length}</p>
   			<ul>
     			{this.props.zombies.map(zombie => 
     				<ZombieItem key={zombie.id}  
