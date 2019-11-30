@@ -20,3 +20,25 @@
 .App-link {
   color: #09d3ac;
 }
+
+li span.delete-item {
+  visibility: hidden;
+}
+
+span.delete-item button {
+  background: none;
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+li:hover span.delete-item {
+  visibility: visible;
+}
+
+a {
+  padding-left: 2px;
+  padding-right: 2px;
+}
