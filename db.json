@@ -3,32 +3,32 @@
     {
       "id": 1,
       "name": "Mutilated Soldier",
-      "location": "hospital"
+      "location": "Hospital"
     },
-     {
+    {
       "id": 2,
       "name": "Crazy Scientist",
-      "location": "hospital"
+      "location": "Hospital"
     },
-     {
+    {
       "id": 3,
       "name": "Three armed mutant",
-      "location": "school"
+      "location": "School"
     },
-     {
+    {
       "id": 4,
       "name": "Super Fast",
-      "location": "school"
+      "location": "School"
     },
-     {
+    {
       "id": 5,
       "name": "Flying",
-      "location": "warehouse"
+      "location": "Warehouse"
     },
-     {
+    {
       "id": 6,
       "name": "Ten foot tall",
-      "location": "warehouse"
+      "location": "Warehouse"
     }
   ]
 }

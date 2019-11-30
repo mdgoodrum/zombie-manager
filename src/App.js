@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route } from 'react-router-dom';
 import './App.css';
 import ZombieList from './components/ZombieList';
+import ZombieForm from './components/ZombieForm';
 import Selector from './components/Selector';
 
 function App(props) {
@@ -10,6 +11,7 @@ function App(props) {
       <header className="App-header">
       <BrowserRouter>
         <div>
+          <ZombieForm/>
           <Route path='/:location?' render={({ match }) => (
             <ZombieList location={match.params.location} />
           )} />

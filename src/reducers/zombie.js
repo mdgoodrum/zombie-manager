@@ -57,11 +57,11 @@ export const deleteZombie = (id) => {
 export const getZombiesByLocation = (zombies, location) => {
 	switch(location) {
 		case 'hospital':
-			return zombies.filter(z => z.location === 'hospital');
+			return zombies.filter(z => z.location === 'Hospital');
 		case 'school':
-			return zombies.filter(z => z.location === 'school');
+			return zombies.filter(z => z.location === 'School');
 		case 'warehouse':
-			return zombies.filter(z => z.location === 'warehouse');
+			return zombies.filter(z => z.location === 'Warehouse');
 		default:
 			return zombies;
 	};
